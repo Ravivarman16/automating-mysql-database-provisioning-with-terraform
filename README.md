@@ -82,9 +82,8 @@ Consider a scenario where an organization is expanding its online services and n
 
 Configure **IAM User credentials** by using the following command:
 
-    ```bash
     aws configure
-    ```
+
 ---
 
 ## STEP 5 - PROVISIONING THE DATABASE USING TERRAFORM
