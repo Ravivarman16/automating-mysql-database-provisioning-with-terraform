@@ -34,4 +34,14 @@ Consider a scenario where an organization is expanding its online services and n
 
 ---
 
+## STEP 1 – CREATING AN IAM USER & ACCESS-KEY AND SECRET-KEY ACCESS
+
+1. Create an **IAM User** with the following policies:
+   - **AmazonEC2FullAccess**
+   - **AmazonRDSFullAccess**
+
+2. Generate an **access key and secret key** for the IAM User created in step 1. This key pair will be used for authentication when interacting with AWS services.
+
+
+---
 
