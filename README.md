@@ -45,3 +45,114 @@ Consider a scenario where an organization is expanding its online services and n
 
 ---
 
+## STEP 2 – CREATING AN EC2 INSTANCE
+
+1. Create an **EC2 Instance** using the **AWS EC2 Service.**
+
+---
+
+## STEP 3 - CONNECTING THE CREATED INSTANCE & INSTALLING REQUIRED PACKAGES
+
+1. Connect to the created instance using **Instance Connect or an SSH client method.**
+
+2. Clone the **GitHub Repository:**
+
+    ```bash
+    git clone https://github.com/Ravivarman16/automating-mysql-database-provisioning-with-terraform.git
+    cd automating-mysql-database-provisioning-with-terraform
+    ```
+
+3. Change the file permissions and execute the `terraform.sh` file:
+
+    ```bash
+    chmod +x terraform.sh
+    ./terraform.sh
+    ```
+
+4. Check whether the required packages are installed by using the following commands:
+
+    ```bash
+    terraform --version
+    aws --version
+    ```
+
+---
+
+## STEP 4 – CONFIGURING AWS CREDENTIALS
+
+Configure IAM User credentials by using the following command:
+
+    ```bash
+    aws configure
+    ```
+
+---
+
+## STEP 5 - PROVISIONING THE DATABASE USING TERRAFORM
+
+1. Use the following commands for Terraform to create the database:
+
+    ```bash
+    terraform init
+    terraform fmt
+    terraform validate
+    terraform plan
+    terraform apply -auto-approve
+    ```
+
+2. After creating the database, use the following command to delete the database using Terraform:
+
+    ```bash
+    terraform destroy -auto-approve
+    ```
+
+---
+
+## TERRAFORM OUTPUT:
+
+![image](https://github.com/Ravivarman16/automating-mysql-database-provisioning-with-terraform/assets/129171351/2fcda7a2-2425-4b3d-a2ed-3d2024e92fc8)
+
+---
+
+## CONSOLE OUTPUT:
+
+![image](https://github.com/Ravivarman16/automating-mysql-database-provisioning-with-terraform/assets/129171351/6519810a-0103-4a6a-8565-a1f53c6c42eb)
+
+
+![image](https://github.com/Ravivarman16/automating-mysql-database-provisioning-with-terraform/assets/129171351/9e774e57-fcca-40ea-b826-0432fddb0649)
+
+
+![image](https://github.com/Ravivarman16/automating-mysql-database-provisioning-with-terraform/assets/129171351/7b9f6738-e410-44f8-8e50-2103da6b0b49)
+
+
+![image](https://github.com/Ravivarman16/automating-mysql-database-provisioning-with-terraform/assets/129171351/f9a9f086-e5b8-442e-902f-58d3f2413afc)
+
+
+---
+
+## BENEFITS OF DOING ABOVE TASK:
+
+- **Consistency:** Terraform ensures that the infrastructure is provisioned consistently every time, reducing the chance of configuration drift.
+
+- **Scalability:** Easily scale the number of MySQL databases up or down based on demand by adjusting the Terraform configuration.
+
+- **Time Efficiency:** Automation speeds up the deployment process, allowing teams to focus on more critical tasks rather than manual provisioning.
+
+- **Repeatability:** The Infrastructure as Code (IaC) approach allows for easy replication of the infrastructure setup in different environments, promoting a consistent development, testing, and production workflow.
+
+- **Error Reduction:** With Terraform handling the provisioning process, human errors are minimized, leading to a more reliable and stable database environment.
+
+
+---
+
+All the files used in this task have been uploaded to this GitHub Repository: [automating-mysql-database-provisioning-with-terraform](https://github.com/Ravivarman16/automating-mysql-database-provisioning-with-terraform.git)
+
+---
+
+# Task Instructions Recap
+
+All the steps for this task have been provided in this document: [Automating MySQL Database Provisioning with Terraform.pdf](https://github.com/Ravivarman16/automating-mysql-database-provisioning-with-terraform/files/13794567/Automating.MySQL.Database.Provisioning.with.Terraform.pdf)
+
+---
+
+
